@@ -25,9 +25,24 @@ html {
     background-color: var(--color-black);
 }
 
-/* defining the size of the main container and centering it in the viewport */
+/* changing the font and colour of all the text */
 body {
-    margin: 0 auto;
     font-family: mplus1p;
     color: var(--white-font);
+}
+
+.title-container {
+    height: 382px;
+    padding-left: 132px; 
+    padding-right: 132px; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    left: 128px; 
+    top: 128px; 
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
 }

@@ -33,4 +33,140 @@ html {
     color: var(--white-font);
 }
 
-.title
+.title {
+    /* TODO: style this */
+}
+
+.title-text {
+    /* TODO: style this */
+}
+
+.title-subtitle {
+    /* TODO: style this */
+}
+
+/* TODO: add all of the other content and style them */
+
+/* creating names for grid elements */
+#title {
+    grid-area: titl;
+}
+
+#section1 {
+    grid-area: sec1;
+}
+#section1Image1 {
+    grid-area: s1i1;
+}
+#section1Text1 {
+    grid-area: s1t1;
+}
+
+#section2 {
+    grid-area: sec2;
+}
+#section2Image1 {
+    grid-area: s2i1;
+}
+#section2Text1 {
+    grid-area: s2t1;
+}
+
+#section3 {
+    grid-area: sec3;
+}
+#section3Image1 {
+    grid-area: s3i1;
+}
+#section3Text1 {
+    grid-area: s3t1;
+}
+
+#section4 {
+    grid-area: sec4;
+}
+#section4Image1 {
+    grid-area: s4i1;
+}
+#section4Text1 {
+    grid-area: s4t1;
+}
+
+#section5 {
+    grid-area: sec5;
+}
+#section5Image1 {
+    grid-area: s5i1;
+}
+#section5Text1 {
+    grid-area: s5t1;
+}
+
+#section6 {
+    grid-area: sec6;
+}
+#section6Image1 {
+    grid-area: s6i1;
+}
+#section6Image2 {
+    grid-area: s6i2;
+}
+#section6Text1 {
+    grid-area: s6t1;
+}
+
+#section7 {
+    grid-area: sec7;
+}
+#section7Image1 {
+    grid-area: s7i1;
+}
+#section7Image2 {
+    grid-area: s7i2;
+}
+#section7Image3 {
+    grid-area: s7i3;
+}
+#section7Image4 {
+    grid-area: s7i4;
+}
+#section7Text1 {
+    grid-area: s7t1;
+}
+
+/* make the main container use a flexible layout grid */
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+
+/* the responsive layout breakpoints */
+/* mobile phone layout */
+.main-container {
+    grid-template:
+    "titl titl titl titl" minmax(30em,auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s1i1 s1i1 s1i1 s1i1" minmax(30em, auto)
+    "s1t1 s1t1 s1t1 s1t1" minmax(12em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s2i1 s2i1 s2i1 s2i1" minmax(30em, auto)
+    "s2t1 s2t1 s2t1 s2t1" minmax(12em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "sec3 sec3 sec3 sec3" minmax(30em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s4i1 s4i1 s4i1 s4i1" minmax(30em, auto)
+    "s4t1 s4t1 s4t1 s4t1" minmax(12em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s5i1 s5i1 s5i1 s5i1" minmax(30em, auto)
+    "s5t1 s5t1 s5t1 s5t1" minmax(12em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s5i1 s5i1 s5i1 s5i1" minmax(30em, auto)
+    "s5t1 s5t1 s5t1 s5t1" minmax(12em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s6t1 s6t1 s6t1 s6t1" minmax(15em, auto)
+    "s6i1 s6i1 s6i2 s6i2" minmax(20em, auto)
+    " ..   ..   ..   .. " minmax(4em, auto)
+    "s7t1 s7t1 s7t1 s7t1" minmax(20em, auto)
+    "s7i1 s7i1 s7i2 s7i2" minmax(20em, auto)
+    "s7i3 s7i3 s7i4 s7i4" minmax(20em, auto);
+}
